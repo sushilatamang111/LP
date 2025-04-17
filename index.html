@@ -124,15 +124,54 @@
   </section>
 
   <!-- フッター -->
-  <footer id="contact">
-    <div class="container">
-      <h4 class="mb-3">📩 お問い合わせ</h4>
-      <p>ご質問・ご相談は以下のメールまでお気軽にどうぞ。</p>
-      <a href="mailto:sushilatmg2002@gmail.com" class="btn btn-outline-primary">sushilatmg2002@gmail.com</a>
-      <p class="mt-3 text-muted">© 2025 SHADOM ENGLISH. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+  <style>
+    .kirakira-btn {
+      display: inline-block;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(45deg, #ff6ec4, #7873f5);
+      border: none;
+      border-radius: 50px;
+      padding: 12px 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .kirakira-btn::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: rotate(45deg);
+      transition: all 0.5s ease-in-out;
+    }
+    
+    .kirakira-btn:hover::before {
+      top: 100%;
+      left: 100%;
+    }
+    
+    .kirakira-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 25px rgba(255, 110, 196, 0.6);
+    }
+    </style>
+    
+    <footer id="contact">
+      <div class="container text-center">
+        <h4 class="mb-3">📩 お問い合わせ・申し込み</h4>
+        <p>ご質問・ご相談、または申し込みは以下のボタンからどうぞ。</p>
+        <a href="https://px.a8.net/svt/ejp?a8mat=4539ZW+C9RNN6+4X7G+BXIYP" class="kirakira-btn" target="_blank" rel="noopener noreferrer">
+          ✨ 今すぐ申し込む ✨
+        </a>
+        <p class="mt-3 text-muted">© 2025 SHADOM ENGLISH. All rights reserved.</p>
+      </div>
+    </footer>
+    
